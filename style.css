@@ -38,6 +38,9 @@ body {
 	font-size: 1.5em;
 	background: #74d4c0;
 	text-align: center;
+	
+	background-image: linear-gradient(#74d4c0, #d13531c9), url(coda.jpg);
+	background-size: cover;
 }
 .footer {
 	padding: 12px;
