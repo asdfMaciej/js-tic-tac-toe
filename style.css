@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	display: grid;
+	grid-template-areas: 'turn turn'
+						 'board scores'
+						 'footer footer';
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: auto 1fr;
+	min-height: 100vh;
+	background: #def4f0;
+}
+.board {
+	grid-area: board;
+	width: 600px;
+	height: 600px;
+	grid-gap: 16px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.turn {
+	grid-area: turn;
+	padding: 12px;
+	background: #9a1f40;
+	color: white;
+	text-align: center;
+	font-size: 2.3em;
+}
+.scoreboard {
+	grid-area: scores;
+	padding: 12px;
+	font-size: 1.5em;
+	background: #74d4c0;
+	text-align: center;
+}
+.footer {
+	padding: 12px;
+	grid-area: footer;
+	background: #9a1f40;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+
+}
+.box {
+	font-size: 4em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: white;
+	font-weight: 600;
+}
+
+.box:hover {
+	background: #f1f1f1;
+}
